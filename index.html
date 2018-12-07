@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Inria Meteo</title>
+  <!-- custom-theme -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <!-- //custom-theme -->
+  <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+  <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" media="all">
+  <link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext"
+        rel="stylesheet">
+</head>
+<body>
+<div class="main">
+  <h1>Inria Meteo</h1>
+  <div class="w3_agile_main_grids">
+    <div class="agile_main_grid">
+      <div class="agileits_nuitInfo_main_grid_left">
+        <div class="wthree_main_grid bg-weather">
+          <div class="w3ls_main_grid">
+            <div class="agileits_main_grid_left">
+              <div class="agileits_main_grid_leftl">
+                <h3 id="temp-deg"></h3>
+              </div>
+              <div class="agileits_main_grid_leftr">
+                <h4 id="weather-main">Sunny</h4>
+                <p id="position"></p>
+              </div>
+              <div class="clear"></div>
+            </div>
+            <div class="agileits_main_grid_right">
+              <p>Wind speed: <span id="wind-speed"></span></p>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="w3l_main_grid_list">
+            <ul id="owl-demo" class="owl-carousel owl-theme">
+              <li><h4>Fri</h4>
+                <div class="nuitInfo_icon">
+                  <img src="images/1.png" alt=" " class="w3_img_responsive"/>
+                </div>
+                <h5>27° <span>15°</span></h5>
+              </li>
+              <li><h4>Sat</h4>
+                <div class="nuitInfo_icon">
+                  <img src="images/2.png" alt=" " class="w3_img_responsive"/>
+                </div>
+                <h5>12° <span>20°</span></h5>
+              </li>
+              <li><h4>Sun</h4>
+                <div class="nuitInfo_icon">
+                  <img src="images/3.png" alt=" " class="w3_img_responsive"/>
+                </div>
+                <h5>15° <span>10°</span></h5>
+              </li>
+              <li><h4>Mon</h4>
+                <div class="nuitInfo_icon">
+                  <img src="images/4.png" alt=" " class="w3_img_responsive"/>
+                </div>
+                <h5>20° <span>18°</span></h5>
+              </li>
+              <li><h4>Tue</h4>
+                <div class="nuitInfo_icon">
+                  <img src="images/5.png" alt=" " class="w3_img_responsive"/>
+                </div>
+                <h5>15° <span>15°</span></h5>
+              </li>
+              <li><h4>Wed</h4>
+                <div class="nuitInfo_icon">
+                  <img src="images/6.png" alt=" " class="w3_img_responsive"/>
+                </div>
+                <h5>10° <span>12°</span></h5>
+              </li>
+              <li><h4>Thu</h4>
+                <div class="nuitInfo_icon">
+                  <img src="images/7.png" alt=" " class="w3_img_responsive"/>
+                </div>
+                <h5>12° <span>10°</span></h5>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="agileits_copyright">
+    <p>© 2018 Inria Meteo. All rights reserved | developped by Nuit-Info, ISITCom.</p>
+  </div>
+</div>
+<!-- js -->
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/script.js"></script>
+<script>
+  $(document).ready(function () {
+    $("#owl-demo,#owl-demo1,#owl-demo3,#owl-demo4").owlCarousel({
+      autoPlay: 3000, //Set AutoPlay to 3 seconds
+      items: 4,
+      itemsDesktop: [768, 3],
+      itemsDesktopSmall: [414, 2]
+    });
+    getLocation();
+  });
+</script>
+<!-- //js -->
+</body>
+</html>

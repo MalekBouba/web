@@ -1,0 +1,11 @@
+{
+  "name": "INRIA-nuitInfo",
+  "version": "0.0.1",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}
